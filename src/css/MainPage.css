@@ -1,0 +1,97 @@
+.menu-container {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;
+}
+.menu {
+    
+    border: 0.5vh dotted #c5bfbf; /* 设置点点点边框 */
+    /* padding: 20px;
+    margin: 20px;
+    width: 300px;  */
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-header {
+    margin-top: 1vh;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    padding: 0.5vw 40%;
+    background-color: rgb(181, 49, 49);
+}
+
+.section-one {
+    width: 80%;
+}
+.sub-title {
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    border-bottom: 0.3vh solid rgb(157, 149, 149);
+    padding: 1vw;
+}
+.one-dish {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.6vw;
+}
+
+.food-name {
+    font-size: 2vw;
+    position: relative;
+}
+
+.food-dot {
+    flex-grow: 1;
+    position: relative;
+    text-align: center;
+    background-color: rgb(189, 92, 108);
+}
+
+.food-dot::before, .food-dot::after {
+    content: "................................................................................................";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    overflow: hidden;
+    pointer-events: none;
+    color: lightgray; /* 点线的颜色，可以根据需要调整 */
+}
+
+.food-dot::before {
+    left: 0;
+    width: 50%;
+    text-align: right;
+    padding-right: 10px; /* 调整点线和中间内容的间距 */
+}
+
+.food-dot::after {
+    right: 0;
+    width: 50%;
+    text-align: left;
+    padding-left: 10px; /* 调整点线和中间内容的间距 */
+}
+
+.food-price {
+    width: 5vw;
+    font-size: 2vw;
+    flex-shrink: 0;
+}
+
+
+
+.contact {
+    font-size: 2vw;
+    color: #a0a0a0;
+}
+
+
