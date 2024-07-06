@@ -1,12 +1,21 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux';
+
 
 const Home = (props) => {
   const { loggedIn, email } = props
   const navigate = useNavigate()
 
+
   const onButtonClick = () => {
     // You'll update this function later
+    if (loggedIn) {
+      // Log out logic here, if needed
+      // For now, we will just navigate to the login page
+    } else {
+      navigate('/login')
+    }
   }
 
   return (

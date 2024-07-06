@@ -4,7 +4,8 @@ import Counter from "./Counter";
 import { useTranslation } from 'react-i18next';
 import GreetSomeone from "./GreetSomeone";
 
-function MainPage() {
+function MainPage(props) {
+    
     const { t, i18n } = useTranslation();
 
     const changeLanguage = (lng) => {
