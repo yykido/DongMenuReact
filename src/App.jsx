@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './css/MainPage.css';
 import './css/Basic.css';
+import './css/ProductCard.css';
 import MainPage from'./components/MainPage.jsx';
 import Home from'./components/Home.jsx';
 import Login from'./components/Login.jsx';
@@ -18,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             {/* <Route
               path="/"
